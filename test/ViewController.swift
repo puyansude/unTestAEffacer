@@ -2,13 +2,26 @@
 
 import UIKit
 
+class UneAutreClasse {
+    
+    func quiSuisJe() -> String {
+        return "UneClasse"
+    }
+}
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let bidon = UneAutreClasse()
+        
+        print(bidon.quiSuisJe())
+        
         var j = 0
         let chaine = "bonjour le monde"
+        
         for i in 1...10 {
             j = i % 4
             print("\(i) - \(chaine)!!".uppercaseString.lowercaseString.capitalizedString)
