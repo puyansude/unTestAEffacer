@@ -9,5 +9,8 @@
 import Foundation
 
 class UneClasse {
-    
+  
+    func quiSuisJe() -> String {
+        return "UneClasse"
+    }
 }
